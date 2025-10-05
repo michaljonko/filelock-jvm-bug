@@ -1,0 +1,22 @@
+plugins {
+	id 'java'
+}
+
+wrapper {
+	gradleVersion = '8.14.3'
+	distributionType = Wrapper.DistributionType.BIN
+}
+
+group 'io.github.michaljonko'
+version '1.0-SNAPSHOT'
+
+compileJava.sourceCompatibility = JavaVersion.VERSION_21
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+}
